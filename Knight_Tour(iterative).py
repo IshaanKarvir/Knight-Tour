@@ -1,10 +1,4 @@
 import time
-"""
-Knight class
-Attributes:
-    place: current place on board (idk yet)
-    edges: possible places knight could jump to
-"""
 
 class Board:
     def __init__(self):
@@ -31,8 +25,6 @@ def get_edges(place, board):
             #if X_value == 0 and y_value == 1:
             #    print('edge considered is - ', X_value, y_value, place)
             if y_value < 0 or X_value < 0 or y_value > 7 or X_value > 7:
-                #if X_value == 0 and y_value == 1:
-                #    print('this is why not selected - out of bounds', X_value, y_value)
                 continue
             if board.board[y_value][X_value] == 1:
                 #if X_value == 0 and y_value == 1:
